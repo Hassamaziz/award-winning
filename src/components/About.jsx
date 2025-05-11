@@ -31,10 +31,9 @@ const About = () => {
         <h2 className="font-general text-sm uppercase md:text-[10px]">
           welcome to zentry
         </h2>
+        
         <AnimatedTitle />
-        <div className="mt-5 special-font font-zentry text-center text-4xl uppercase leading-[0.8] md:text-[6rem]">
-          disc<b>o</b>ver the world's <br /> l<b>a</b>rgest shared adventure
-        </div>
+       
         <div className="about-subtext">
           <p>The Game of Games begins—your life, now an epic MMORPG</p>
           <p>
