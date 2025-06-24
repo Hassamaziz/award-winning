@@ -17,7 +17,7 @@ export const BentoTilt = ({ children, className = "" }) => {
     const tiltX = (relativeY - 0.5) * 5;
     const tiltY = (relativeX - 0.5) * -5;
 
-    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
+    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.92, .92, .92)`;
     setTransformStyle(newTransform);
   };
 
@@ -31,7 +31,10 @@ export const BentoTilt = ({ children, className = "" }) => {
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ transform: transformStyle }}
+       style={{
+        transform: transformStyle,
+        transition: "transform 0.5s ease-out", // Add this line for smooth transition
+      }}
     >
       {children}
     </div>
