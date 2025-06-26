@@ -33,7 +33,7 @@ export const BentoTilt = ({ children, className = "" }) => {
       onMouseLeave={handleMouseLeave}
        style={{
         transform: transformStyle,
-        transition: "transform 0.5s ease-out", // Add this line for smooth transition
+        transition: "transform 0.5s ease-out"
       }}
     >
       {children}
